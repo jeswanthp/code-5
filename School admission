@@ -1,0 +1,81 @@
+noStu=int(input("Enter Number of Students : "));
+details=[]
+for i in range(0,noStu):
+    details.append([]);
+    print("Enter Student-%d Name "%(i+1));
+    details[i].append(input());
+    print("Enter Student-%d Branch "%(i+1));
+    details[i].append(input());
+    print("Enter Student-%d Year "%(i+1));
+    details[i].append(input());
+    
+edit="yes"
+while edit.lower()=="yes":
+    edit=input("Do You want to edit type yes : ")
+    if edit.lower()=="yes":
+        n=int(input("Enter Student Number to edit : "))
+        details[n-1]=[]
+        print("Enter Student-%d Name "%(n));
+        details[n-1].append(input());
+        print("Enter Student-%d Branch "%(n));
+        details[n-1].append(input());
+        print("Enter Student-%d Year "%(n));
+        details[n-1].append(input());
+
+
+print(details);
+
+
+Enter Number of Students : 4
+Enter Student-1 Name 
+
+s1
+Enter Student-1 Branch 
+
+b1
+Enter Student-1 Year 
+
+y1
+Enter Student-2 Name 
+
+s2
+Enter Student-2 Branch 
+
+b2
+Enter Student-2 Year 
+
+y2
+Enter Student-3 Name 
+
+s3
+Enter Student-3 Branch 
+
+b3
+Enter Student-3 Year 
+
+y3
+Enter Student-4 Name 
+
+s4
+Enter Student-4 Branch 
+
+b4
+Enter Student-4 Year 
+
+y4
+
+Do You want to edit type yes : yes
+
+Enter Student Number to edit : 3
+Enter Student-3 Name 
+
+ss3
+Enter Student-3 Branch 
+
+bb3
+Enter Student-3 Year 
+
+yy3
+
+Do You want to edit type yes : no
+[['s1', 'b1', 'y1'], ['s2', 'b2', 'y2'], ['ss3', 'bb3', 'yy3'], ['s4', 'b4', 'y4']]
